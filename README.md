@@ -1,3 +1,11 @@
 # m2asm
 Memory address to asm byte instruction
 ![Demo](carbon.png)
+
+Output can be used inside ASM language specific functions to test.
+
+```
+int main(int argc, char *argv[]) {
+  __asm__(".byte 0xf0, 0xf0, 0x26, 0x26, 0x26, 0x26, 0x26, 0x26, 0x0f, 0x17, 0x24, 0x65, 0x83, 0x00, 0x00, 0x00");
+}
+```
